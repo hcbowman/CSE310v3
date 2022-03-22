@@ -1,0 +1,18 @@
+# ninja log v5
+0	2	0	clean	6f7e4fe1e5e93067
+0	233	1647981015755612564	CMakeFiles/Assignment6.dir/BinarySearchTree.cpp.o	b3ea5e9dfb8f62d
+0	243	1647981015766031074	CMakeFiles/Assignment6.dir/main.cpp.o	7bf0f1f83995f841
+0	4	0	clean	6f7e4fe1e5e93067
+2	235	1647981046622143050	CMakeFiles/Assignment6.dir/BinarySearchTree.cpp.o	b3ea5e9dfb8f62d
+2	237	1647981046623796933	CMakeFiles/Assignment6.dir/Course.cpp.o	83fe4be4aef45533
+2	245	1647981046632652561	CMakeFiles/Assignment6.dir/main.cpp.o	7bf0f1f83995f841
+0	4	0	clean	6f7e4fe1e5e93067
+2	236	1647981306527314905	CMakeFiles/Assignment6.dir/BinarySearchTree.cpp.o	b3ea5e9dfb8f62d
+2	237	1647981306528678286	CMakeFiles/Assignment6.dir/Course.cpp.o	83fe4be4aef45533
+2	248	1647981306538964754	CMakeFiles/Assignment6.dir/main.cpp.o	7bf0f1f83995f841
+248	278	1647981306571035956	Assignment6	8001e9cafb6aa8a
+2	240	1647982914490809757	CMakeFiles/Assignment6.dir/BinarySearchTree.cpp.o	b3ea5e9dfb8f62d
+2	240	1647982914490403047	CMakeFiles/Assignment6.dir/Course.cpp.o	83fe4be4aef45533
+240	272	1647982914524466716	Assignment6	8001e9cafb6aa8a
+1	235	1647983024915820647	CMakeFiles/Assignment6.dir/BinarySearchTree.cpp.o	b3ea5e9dfb8f62d
+235	266	1647983024948714686	Assignment6	8001e9cafb6aa8a

@@ -1,0 +1,384 @@
+Choice		Action
+------		------
+A		Inorder Print
+B		Preorder Print
+C		Postorder Print
+D		Tree Minimum
+E		Tree Maximum
+F		Tree Predecessor
+G		Tree Successor
+H		Tree Search
+I		Tree Insert
+J		Right Rotation
+K		Left Rotation
+Q		Quit
+?		Display Help
+
+What action would you like to perform?
+tree is empty
+What action would you like to perform?
+tree is empty
+What action would you like to perform?
+tree is empty
+What action would you like to perform?
+tree is empty
+What action would you like to perform?
+tree is empty
+What action would you like to perform?
+Please enter a course name to find its predecessor:
+Please enter a number of credits to find its predecessor:
+CSE310 with 3 credit(s) does not have any predecessor
+What action would you like to perform?
+Please enter a course name to find its successor:
+Please enter a number of credits to find its successor:
+CSE240 with 3 credit(s) does not have any successor
+What action would you like to perform?
+Please enter a course name to search:
+Please enter a number of credits to search:
+FSE100 with 4 credit(s) not found
+What action would you like to perform?
+Please enter a courseName to right-rotate:
+Please enter a numberOfCredits to right-rotate:
+Right Rotation cannot be performed around SOC450 with 2 credit(s) 
+What action would you like to perform?
+Please enter a courseName to left-rotate:
+Please enter a numberOfCredits to left-rotate:
+Left Rotation cannot be performed around PHY300 with 3 credit(s) 
+What action would you like to perform?
+Please enter a courseName/numberOfCredits to insert:
+Enter a course name
+Enter its number of credits
+CSE310 with 3 credit(s) inserted
+What action would you like to perform?
+Please enter a courseName/numberOfCredits to insert:
+Enter a course name
+Enter its number of credits
+CSE301 with 1 credit(s) inserted
+What action would you like to perform?
+Please enter a courseName/numberOfCredits to insert:
+Enter a course name
+Enter its number of credits
+CSE240 with 3 credit(s) inserted
+What action would you like to perform?
+Please enter a courseName/numberOfCredits to insert:
+Enter a course name
+Enter its number of credits
+EEE120 with 3 credit(s) inserted
+What action would you like to perform?
+Please enter a courseName/numberOfCredits to insert:
+Enter a course name
+Enter its number of credits
+FSE100 with 4 credit(s) inserted
+What action would you like to perform?
+Please enter a courseName/numberOfCredits to insert:
+Enter a course name
+Enter its number of credits
+ENG101 with 4 credit(s) inserted
+What action would you like to perform?
+Please enter a courseName/numberOfCredits to insert:
+Enter a course name
+Enter its number of credits
+SOC450 with 2 credit(s) inserted
+What action would you like to perform?
+
+Course Name: ENG101, Credits: 4
+
+Course Name: FSE100, Credits: 4
+
+Course Name: CSE240, Credits: 3
+
+Course Name: CSE310, Credits: 3
+
+Course Name: EEE120, Credits: 3
+
+Course Name: SOC450, Credits: 2
+
+Course Name: CSE301, Credits: 1
+
+
+What action would you like to perform?
+
+Course Name: CSE310, Credits: 3
+
+Course Name: CSE240, Credits: 3
+
+Course Name: FSE100, Credits: 4
+
+Course Name: ENG101, Credits: 4
+
+Course Name: CSE301, Credits: 1
+
+Course Name: EEE120, Credits: 3
+
+Course Name: SOC450, Credits: 2
+
+
+What action would you like to perform?
+
+Course Name: ENG101, Credits: 4
+
+Course Name: FSE100, Credits: 4
+
+Course Name: CSE240, Credits: 3
+
+Course Name: SOC450, Credits: 2
+
+Course Name: EEE120, Credits: 3
+
+Course Name: CSE301, Credits: 1
+
+Course Name: CSE310, Credits: 3
+
+
+What action would you like to perform?
+Please enter a course name to find its predecessor:
+Please enter a number of credits to find its predecessor:
+The predecessor of EEE120 with 3 credit(s) is
+Course Name: CSE310, Credits: 3
+
+
+What action would you like to perform?
+Please enter a course name to find its successor:
+Please enter a number of credits to find its successor:
+The successor of CSE240 with 3 credit(s) is
+Course Name: CSE310, Credits: 3
+
+
+What action would you like to perform?
+The first course is
+Course Name: ENG101, Credits: 4
+
+
+What action would you like to perform?
+The last course is
+Course Name: CSE301, Credits: 1
+
+
+What action would you like to perform?
+Please enter a course name to search:
+Please enter a number of credits to search:
+SOC450 with 2 credit(s) found
+What action would you like to perform?
+Please enter a course name to search:
+Please enter a number of credits to search:
+ACC250 with 2 credit(s) not found
+What action would you like to perform?
+Please enter a courseName/numberOfCredits to insert:
+Enter a course name
+Enter its number of credits
+PHY300 with 3 credit(s) inserted
+What action would you like to perform?
+Please enter a courseName/numberOfCredits to insert:
+Enter a course name
+Enter its number of credits
+ACC250 with 3 credit(s) inserted
+What action would you like to perform?
+Please enter a courseName to right-rotate:
+Please enter a numberOfCredits to right-rotate:
+Right Rotation around CSE301 with 1 credit(s) is successful
+What action would you like to perform?
+Please enter a courseName to right-rotate:
+Please enter a numberOfCredits to right-rotate:
+Right Rotation cannot be performed around ACC250 with 3 credit(s) 
+What action would you like to perform?
+
+Course Name: CSE310, Credits: 3
+
+Course Name: CSE240, Credits: 3
+
+Course Name: FSE100, Credits: 4
+
+Course Name: ENG101, Credits: 4
+
+Course Name: ACC250, Credits: 3
+
+Course Name: EEE120, Credits: 3
+
+Course Name: CSE301, Credits: 1
+
+Course Name: SOC450, Credits: 2
+
+Course Name: PHY300, Credits: 3
+
+
+What action would you like to perform?
+
+Course Name: ENG101, Credits: 4
+
+Course Name: ACC250, Credits: 3
+
+Course Name: FSE100, Credits: 4
+
+Course Name: CSE240, Credits: 3
+
+Course Name: PHY300, Credits: 3
+
+Course Name: SOC450, Credits: 2
+
+Course Name: CSE301, Credits: 1
+
+Course Name: EEE120, Credits: 3
+
+Course Name: CSE310, Credits: 3
+
+
+What action would you like to perform?
+Please enter a courseName to left-rotate:
+Please enter a numberOfCredits to left-rotate:
+Left Rotation around CSE310 with 3 credit(s) is successful
+What action would you like to perform?
+
+Course Name: ENG101, Credits: 4
+
+Course Name: FSE100, Credits: 4
+
+Course Name: ACC250, Credits: 3
+
+Course Name: CSE240, Credits: 3
+
+Course Name: CSE310, Credits: 3
+
+Course Name: EEE120, Credits: 3
+
+Course Name: PHY300, Credits: 3
+
+Course Name: SOC450, Credits: 2
+
+Course Name: CSE301, Credits: 1
+
+
+What action would you like to perform?
+
+Course Name: EEE120, Credits: 3
+
+Course Name: CSE310, Credits: 3
+
+Course Name: CSE240, Credits: 3
+
+Course Name: FSE100, Credits: 4
+
+Course Name: ENG101, Credits: 4
+
+Course Name: ACC250, Credits: 3
+
+Course Name: CSE301, Credits: 1
+
+Course Name: SOC450, Credits: 2
+
+Course Name: PHY300, Credits: 3
+
+
+What action would you like to perform?
+
+Course Name: ENG101, Credits: 4
+
+Course Name: ACC250, Credits: 3
+
+Course Name: FSE100, Credits: 4
+
+Course Name: CSE240, Credits: 3
+
+Course Name: CSE310, Credits: 3
+
+Course Name: PHY300, Credits: 3
+
+Course Name: SOC450, Credits: 2
+
+Course Name: CSE301, Credits: 1
+
+Course Name: EEE120, Credits: 3
+
+
+What action would you like to perform?
+Please enter a courseName to right-rotate:
+Please enter a numberOfCredits to right-rotate:
+Right Rotation around CSE310 with 3 credit(s) is successful
+What action would you like to perform?
+
+Course Name: ENG101, Credits: 4
+
+Course Name: FSE100, Credits: 4
+
+Course Name: ACC250, Credits: 3
+
+Course Name: CSE240, Credits: 3
+
+Course Name: CSE310, Credits: 3
+
+Course Name: EEE120, Credits: 3
+
+Course Name: PHY300, Credits: 3
+
+Course Name: SOC450, Credits: 2
+
+Course Name: CSE301, Credits: 1
+
+
+What action would you like to perform?
+
+Course Name: EEE120, Credits: 3
+
+Course Name: CSE240, Credits: 3
+
+Course Name: FSE100, Credits: 4
+
+Course Name: ENG101, Credits: 4
+
+Course Name: ACC250, Credits: 3
+
+Course Name: CSE310, Credits: 3
+
+Course Name: CSE301, Credits: 1
+
+Course Name: SOC450, Credits: 2
+
+Course Name: PHY300, Credits: 3
+
+
+What action would you like to perform?
+
+Course Name: ENG101, Credits: 4
+
+Course Name: ACC250, Credits: 3
+
+Course Name: FSE100, Credits: 4
+
+Course Name: CSE310, Credits: 3
+
+Course Name: CSE240, Credits: 3
+
+Course Name: PHY300, Credits: 3
+
+Course Name: SOC450, Credits: 2
+
+Course Name: CSE301, Credits: 1
+
+Course Name: EEE120, Credits: 3
+
+
+What action would you like to perform?
+Please enter a course name to find its predecessor:
+Please enter a number of credits to find its predecessor:
+The predecessor of CSE301 with 1 credit(s) is
+Course Name: SOC450, Credits: 2
+
+
+What action would you like to perform?
+Please enter a course name to find its successor:
+Please enter a number of credits to find its successor:
+The successor of FSE100 with 4 credit(s) is
+Course Name: ACC250, Credits: 3
+
+
+What action would you like to perform?
+The first course is
+Course Name: ENG101, Credits: 4
+
+
+What action would you like to perform?
+The last course is
+Course Name: CSE301, Credits: 1
+
+
+What action would you like to perform?
+The number of nodes deleted: 9
