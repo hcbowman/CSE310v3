@@ -8,18 +8,18 @@
 Course::Course() {
     courseName = "?";
     numberOfCredits = 0;
-    parent = NULL;
-    left = NULL;
-    right = NULL;
+    parent = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 
 Course::Course(string courseName1, int numberOfCredits1) {
     courseName = courseName1;
     numberOfCredits = numberOfCredits1;
-    parent = NULL;
-    left = NULL;
-    right = NULL;
+    parent = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 //The following functions are accessor functions

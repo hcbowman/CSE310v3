@@ -15,11 +15,16 @@ BinarySearchTree::BinarySearchTree() {
 //where X is the number of nodes deleted
 BinarySearchTree::~BinarySearchTree() {
     //TO BE COMPLETED
+    root = deleteNodes(root);
+}
+
+int BinarySearchTree::postOrderTreeDelete(Course *) {
+    return 0;
 }
 
 //Checks if the tree is empty
 bool BinarySearchTree::isEmpty() {
-    if (root == NULL)
+    if (root == nullptr)
         return true;
     else
         return false;
@@ -68,8 +73,8 @@ void BinarySearchTree::inOrderTreeWalk(Course *course) {
     inOrderTreeWalk(course->getLeft());
 
     // Print
-    cout << course->getCourseName() << " ";
-    cout << course->getNumberOfCredits() << " ";
+    cout << course->getCourseName() << endl;
+    cout << course->getNumberOfCredits() << endl;
 
     // Recur on right child
     inOrderTreeWalk(course->getRight());
@@ -81,8 +86,8 @@ void BinarySearchTree::preOrderTreeWalk(Course *course) {
     }
 
     // Print
-    cout << course->getCourseName() << " ";
-    cout << course->getNumberOfCredits() << " ";
+    cout << course->getCourseName() << endl;
+    cout << course->getNumberOfCredits() << endl;
 
     // Recur on left subtree
     preOrderTreeWalk(course->getLeft());
@@ -103,8 +108,8 @@ void BinarySearchTree::postOrderTreeWalk(Course *course) {
     postOrderTreeWalk(course->getRight());
 
     // Print
-    cout << course->getCourseName() << " ";
-    cout << course->getNumberOfCredits() << " ";
+    cout << course->getCourseName() << endl;
+    cout << course->getNumberOfCredits() << endl;
 }
 
 Course *BinarySearchTree::treeSearchNode(Course *, string, int) {
@@ -139,8 +144,19 @@ Course *BinarySearchTree::treePredecessor(string, int) {
     return nullptr;
 }
 
-bool BinarySearchTree::treeInsert(string, int) {
-    return false;
+bool BinarySearchTree::treeInsert(string courseName, int numberOfCredits) {
+
+    bool success = false;
+
+    try {
+        root = insert(courseName, numberOfCredits, root);
+        success = true;
+    }
+    catch (runtime_error &e) {
+        cerr << e.what() << endl;
+    }
+
+    return success;
 }
 
 bool BinarySearchTree::rightRotate(string, int) {
@@ -149,4 +165,70 @@ bool BinarySearchTree::rightRotate(string, int) {
 
 bool BinarySearchTree::leftRotate(string, int) {
     return false;
+}
+
+Course* BinarySearchTree::insert(string courseName, int numberOfCredits, Course *course) {
+
+
+    if (course != nullptr) {
+        if (numberOfCredits != course->getNumberOfCredits()) {
+
+            if (numberOfCredits < course->getNumberOfCredits()) {
+                course->setLeft(insert(courseName, numberOfCredits, course->getLeft()));
+            } else if (numberOfCredits > course->getNumberOfCredits()) {
+                course->setRight(insert(courseName, numberOfCredits, course->getRight()));
+            }
+
+            // DEBUG:
+            cout << "DEBUG: Insert() compared by credits" << endl;
+        } else {
+
+            if (courseName.compare(course->getCourseName()) < 0) {
+                course->setLeft(insert(courseName, numberOfCredits, course->getLeft()));
+            } else if (courseName.compare(course->getCourseName()) > 0) {
+                course->setRight(insert(courseName, numberOfCredits, course->getRight()));
+            }
+            // DEBUG:
+            cout << "DEBUG: Insert() compared alphabetically" << endl;
+        }
+    } else {
+        course = new Course(courseName, numberOfCredits);
+        course->setLeft(nullptr);
+        course->setRight(nullptr);
+    }
+
+    size++;
+    return course;
+}
+
+Course* BinarySearchTree::deleteNodes(Course* course) {
+    if (course != nullptr) {
+        deleteNodes(course->getLeft());
+        deleteNodes(course->getRight());
+        delete course;
+    }
+    return nullptr;
+}
+
+int height(Course* root){
+    if(root== nullptr) return 0;
+    return root->weight;
+}
+Course* rightRotation(Course* root){
+    Course* newRoot = root->getLeft();
+    root->setLeft(newRoot->getRight());
+    newRoot->setRight(root);
+
+   // size = 1 + max(height(root->getLeft()), height(root->getRight()));
+    //newRoot->height = 1+max(height(newRoot->left), height(newRoot->getRight()));
+    return newRoot;
+}
+
+Course* leftRotation(Course* root){
+    Course* newhead = root->getRight();
+    //root->getRight() = newhead->getLeft();
+    //newhead->getLeft = root;
+    //root->height = 1 + max(height(root->getLeft()), height(root->getRight()));
+    //newhead->height = 1+max(height(newhead->getLeft()), height(newhead->getRight()));
+    return newhead;
 }

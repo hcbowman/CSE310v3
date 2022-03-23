@@ -12,12 +12,16 @@
 class BinarySearchTree
 {
 private:
-    Course * root;
+    Course* root;
     int size;
+
+    Course *insert(string courseName, int numberOfCredits, Course *course);
+    Course *deleteNodes(Course *course);
 
 public:
     BinarySearchTree();
     ~BinarySearchTree();
+
     int postOrderTreeDelete(Course *);
     bool isEmpty();
     void inOrderTreePrint();
@@ -37,6 +41,9 @@ public:
     bool treeInsert(string,int);
     bool rightRotate(string, int);
     bool leftRotate(string, int);
+
+
+
 };
 
 
